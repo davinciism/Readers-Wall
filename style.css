@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital@1&family=Ubuntu:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #F2E6D0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.website {
+  background-color: #F6F3EC;
+  width: 90%;
+  margin: 0rem auto;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #590D00;
+}
+
+.primary-button {
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 48px;
+  background-color: #FEB799;
+  color: #590D00;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #FEB799;
+  border-radius: 48px;
+  color: #590D00;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.secondary-button:hover {
+  background-color: #FEB799;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 0;
+}
+nav a {
+  text-decoration: none;
+}
+nav .logo {
+  font-family: "Philosopher", sans-serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #5F5E5A;
+}
+
+input {
+  width: 250px;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+input:focus {
+  border: none;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main .wrapper {
+  margin-top: -10%;
+}
+main .wrapper h1 {
+  font-size: 2.75rem;
+  margin-bottom: 2rem;
+}
+main .wrapper p {
+  opacity: 0.4;
+  margin-bottom: 1rem;
+}
+main img {
+  border-radius: 0.6rem;
+}
+main .book-highlights {
+  width: 100%;
+  padding-inline: 4rem;
+  display: flex;
+}
+main .book-highlights .week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 5rem;
+}
+main .book-highlights .week .book {
+  text-align: center;
+  padding: 2rem;
+}
+main .book-highlights .week .book img {
+  height: 15rem;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem 0.6rem;
+}
+main .book-highlights .week .book h4 {
+  inline-size: -moz-max-content;
+  inline-size: max-content;
+}
+main .shelf {
+  border-bottom: 50px solid #EBE3D6;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  height: 0;
+  width: 94vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .shelf::before {
+  content: "";
+  width: 94vw;
+  height: 16px;
+  background-color: #E1DBC3;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .shelf::after {
+  content: "";
+  width: 86vw;
+  height: 4rem;
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+form button {
+  width: 43%;
+}
+
+.row {
+  height: 80vh;
+  padding-block: 4rem;
+}
+.row a {
+  float: right;
+}
+.row .books {
+  padding-block: 2rem;
+  width: 100%;
+  display: flex;
+}
+.row .books .book {
+  padding: 2rem;
+  display: flex;
+}
+.row .books .book img {
+  height: 13rem;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem 0.6rem;
+}
+.row .books .book .details h4 {
+  inline-size: -moz-max-content;
+  inline-size: max-content;
+}/*# sourceMappingURL=style.css.map */

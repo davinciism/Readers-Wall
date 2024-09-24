@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader's Wall</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <nav class="container">
+        <a href="../index.html"><h3 class="logo">Reader's Wall</h3></a>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./catalgoue.html">Catalogue</a></li>
+            </ul>
+        </div>
+        <a href="./login.html" class="primary-button">Login</a>
+    </nav>
+
+    <main class="container">
+        
+        <form action="" name="login">
+            <h1>Login / Signup</h1>
+            <p>Sign in to view your dashboard</p>
+            <input type="email" name="email" id="email" placeholder="Your email address">
+            <input type="password" name="password" id="password" placeholder="Your password">
+            <input type="number" name="phone" id="phone" placeholder="Your Mobile Number">
+            <button class="primary-button">Login</button>
+        </form>
+    </main>
+
+    <script>
+        
+        const form = document.querySelector('[name="login"]')
+        let email = document.forms["login"]["email"].value
+        let password = document.forms["login"]["password"].value
+        
+        
+        form.addEventListener("submit", function(e){
+            e.preventDefault()
+            let emailValue = document.getElementById('email').value
+            let passwordValue = document.forms["login"]["password"].value
+            let mobilevalue = document.forms["login"]["password"].value
+            if(emailValue == "" || passwordValue == "")
+                alert("All fields are mandatory")
+            else if (mobilevalue != 10 || mobilevalue == '')
+                alert("Invalid phone number")
+            else
+                window.location.replace("/pages/dashboard.html")
+        })
+
+    </script>
+</body>
+</html>
